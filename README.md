@@ -29,6 +29,7 @@ To input sample in the neural network, we need to convert 2D matrix into a one d
 
 ### Mean Image Subtraction:
 There are many ways to do mean subtraction but here we are using mean image subtraction. Mean Image Subtraction is the technique to whitening the dataset. We compute mean of the whole dataset and subtract our data from that mean. In case of MNIST dataset example is given below:
+![](Images/3.JPG)
 Mean subtraction will translate our dataset to the mean of the whole data.
 ### Dropout:
 ### Data preprocessing
@@ -66,6 +67,7 @@ and will also compute local gradients along the way at each layer
   - validate/test - function will test how well your network is doing in terms of loss and accuracy.
 You need to convert the labels to one hot encoding, because we now have 10 classes and their labels are 0,1,2,3...and 9. For each training sample you need to generate a vector of length 10, whose all indices will be zeros except the index of its original label that will be 1.
 For example:
+![](Images/4.JPG)
 ### Feed Forward step
 net = feedForward(net, batch_data, keep_prob)
 i ( i)
