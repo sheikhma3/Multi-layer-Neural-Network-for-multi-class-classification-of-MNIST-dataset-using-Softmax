@@ -4,6 +4,8 @@ Implementation of multi-layer Neural Network for multi-class classification.
 In this part, we will create a complete network architecture consisting of multiple layers. We were required to report results with 2 hidden layers on MNIST dataset. Following is the architecture of our network as shown in the below diagram.
 ![](Images/1.JPG)
 ### MNIST Dataset:
+Extract Dataset in task3_Data Folder. Such like
+- Task3_Data -> train,test
 The dataset is attached with the code in Data folder. This dataset contains 60000 training and 10000 test examples. Each example is of 784x1 sizes, which is in vectorized form of 28x28 (2D grayscale) images. There are 10 classes in which each sample is an image of one of the digits (0 to 9). Please note that in MNIST dataset there are 10 categories. If we randomly guess one category, there’s 1/10 probability that it would be correct. Therefore, we couldn't (theoretically) make a classifier that performs worse than that. If we'd get less than 10% accuracy in any of our experiments, we can safely assume that we are doing something fundamentally wrong.
 Function to load Dataset:
 train_set_x, train_set_y, test_set_x, test_set_y =load_dataset (path_to_dataset)
